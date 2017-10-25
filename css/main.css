@@ -4,7 +4,7 @@
 
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "Avenir", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -35,6 +35,26 @@ a {
     background-color: transparent;
     outline: medium none;
     -webkit-text-decoration-skip: objects;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-roman {
+  font-weight: 500;
+}
+
+.text-medium {
+  font-weight: 600;
+}
+
+.text-heavy {
+  font-weight: 700;
+}
+
+.text-black {
+  font-weight: 800;
 }
 
 section {
@@ -150,7 +170,7 @@ nav img {
 .btn {
     display: flex;
     align-items: center;
-    font-weight: 400;
+    font-weight: 800;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
@@ -223,6 +243,7 @@ nav img {
     height: 100%;
     width: 100%;
     z-index: 1;
+    margin: auto;
 }
 
 .card-img-overlay.text-shadow {
@@ -231,6 +252,8 @@ nav img {
 
 .card-title {
     margin-bottom: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1.25px;
 }
 
 .card-img {
@@ -246,6 +269,14 @@ nav img {
 
 .pl-0{
     padding-left: 0 !important;
+}
+
+.has-pad {
+    padding: 3.125em;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
 }
 
 .mb-5 {
@@ -268,6 +299,27 @@ nav img {
 
 .text-center {
     text-align: center !important;
+}
+
+@media (max-width: 576px) {
+    .text-sm-left {
+        text-align: left !important;
+    }
+    .text-sm-right {
+        text-align: right !important;
+    }
+    .text-sm-center {
+        text-align: center !important;
+    }
+
+    ul.footer-menu > li {
+      padding: 0 5px !important;
+    }
+
+    .mt-1 {
+      margin-top: 0rem !important;
+    }
+
 }
 
 .card[class*="g-"]::after {

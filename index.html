@@ -9,6 +9,52 @@
     <title>Nairatones</title>
     <link href="css/bootstrap-grid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Avenir Light'), local('Avenir-Light'), url(fonts/avenir-light.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Avenir Book'), local('Avenir-Book'), url(fonts/avenir-book.woff) format('woff');
+      }
+
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Avenir Roman'), local('Avenir-Roman'), url(fonts/avenir-roman.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Avenir Medium'), local('Avenir-Medium'), url(fonts/avenir-medium.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Avenir Heavy'), local('Avenir-Heavy'), url(fonts/avenir-heavy.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Avenir Black'), local('Avenir-Black'), url(fonts/avenir-black.woff) format('woff');
+      }
+    </style>
+
 </head>
 
 <body>
@@ -33,9 +79,11 @@
                         <div class="col-4 col-sm-5">
                             <input type="search" name="search" class="form-control">
                         </div>
-                        <div class="col-2 col-sm-6 text-right">
-                            <span>Sign In</span>
-                            <span>Sign Up</span>
+                        <div class="col-2 col-sm-6 text-center">
+                            <div class="row no-gutters">
+                              <span class="col-6 text-roman">Sign In</span>
+                              <span class="col-6 text-heavy">Sign Up</span>
+                            </div>
                         </div>
                     </div>
                 </form>
@@ -50,8 +98,8 @@
                 <img class="img-fit" src="images/ycee.jpg" alt="Banner">
             </div>
             <div class="container jumbotron-inner row flex-column">
-                <h1 class="col-6 col-sm-12 text-truncate">Juice (feat. Maleek berry)</h1>
-                <h1 class="col-6 col-sm-12 text-truncate">Ycee</h1>
+                <h1 class="col-6 col-sm-12 text-light text-truncate">Juice (feat. Maleek berry)</h1>
+                <h1 class="col-6 col-sm-12 text-heavy text-truncate">Ycee</h1>
                 <div class="col-2 col-sm-6">
                     <a class="btn btn-rounded no-gutters" href="#" role="button">
                         <div class="col-3"><img class="img-fit" src="images/emblem.png" alt="nairatone emblem"></div>
@@ -62,16 +110,17 @@
         </div>
 
         <section class="container text-center">
-            <h3>Hear what’s trending and make it your ringtone</h3>
+            <h3 class="text-heavy">Hear what’s trending and make it your ringtone</h3>
             <div class="row flex-sm-column no-gutters">
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-sm-12 mb-5">
                     <div class="card has-shadow">
                         <div class="img-wrap">
                           <img class="img-fit" src="images/tekno-pana.jpg" alt="Card image">
                         </div>
+                        <div class="card-img-overlay has-pad"></div>
                     </div>
                 </div>
-                <div class="col-7 col-sm-12">
+                <div class="col-7 col-sm-12 mb-5 gutters-sm">
                     <div class="row no-gutters">
                         <div class="col-6 mb-5">
                             <div class="card has-shadow">
@@ -109,19 +158,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-2 col-sm-12 mb-5">
                     <div class="card has-shadow">
                         <div class="img-wrap">
                             <img class="img-fit" src="images/sftos.jpg" alt="Card image">
                         </div>
+                        <div class="card-img-overlay has-pad"></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="container text-center">
-            <h3>Choose your Tone</h3>
-            <h5>Select your favourite Genre of ringtones</h5>
+            <h3 class="text-heavy">Choose your Tone</h3>
+            <h5 class="text-medium">Select your favourite Genre of ringtones</h5>
             <div class="row flex-sm-column no-gutters">
                 <div class="col-3 col-sm-12 mb-5">
                     <div class="card g-music has-shadow">
@@ -133,7 +183,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12 mb-5">
+                <div class="col-3 col-sm-12 mb-5 gutters-sm">
                     <div class="row no-gutters">
                         <div class="col-12 mb-5">
                             <div class="card g-movies has-shadow">
@@ -177,7 +227,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-sm-12 gutters-sm">
                     <div class="row no-gutters">
                         <div class="col-12 col-sm-6 mb-5">
                             <div class="card g-religious has-shadow">
@@ -211,12 +261,11 @@
                 <div class="img-wrap">
                     <img class="img-fit" src="images/bg-crowd.png" alt="Banner">
                 </div>
-                <div class="card-img-overlay align-items-center justify-content-around">
-                  <div class="col-8">
-                    <h4 class="banner-text">You don’t have to be a singer to be heard by the world just record that tone</h4>
+                <div class="card-img-overlay row align-items-center justify-content-around flex-sm-row-reverse">
+                  <div class="col-8 col-sm-12">
+                    <h4 class="banner-text text-light">You don’t have to be a singer to be heard by the world just record that <strong class="text-black">tone</strong></h4>
                   </div>
-                  <div class="col-2"></div>
-                  <div class="col-2">
+                  <div class="col-2 col-sm-6">
                       <img class="img-fit" src="images/logo-lg.png" alt="Banner">
                   </div>
                 </div>
@@ -226,9 +275,9 @@
         </section>
 
         <section class="container text-center">
-          <h3>Upload your tune, let the world hear you roar</h3>
+          <h3 class="text-heavy">Upload your tune, let the world hear you roar</h3>
           <div class="row justify-content-center align-items-center">
-            <div class="col-3">
+            <div class="col-3 col-sm-6">
               <img src="images/mic-effect.svg" alt="Mic">
             </div>
           </div>
@@ -238,7 +287,7 @@
     <hr>
     <footer class="container">
         <div class="row no-gutters">
-          <div class="col-6">
+          <div class="col-6 col-sm-12 text-sm-center">
             <nav>
               <ul class="footer-menu">
                 <li class="pl-0"><a href="#">Trends</a></li>
@@ -250,8 +299,8 @@
               <p>Language: <a href="#">English</a></p>
             </nav>
           </div>
-          <div class="col-6 text-right">
-            <p>&copy; 2017 Nairatones, All Rights Reserved</p>
+          <div class="col-6 col-sm-12 text-right text-sm-center">
+            <p class="mt-1">&copy; 2017 Nairatones, All Rights Reserved</p>
           </div>
         </div>
     </footer>
