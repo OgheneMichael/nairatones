@@ -9,6 +9,7 @@
     <title>Nairatones</title>
     <link href="css/bootstrap-grid.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
 
     <style>
       @font-face {
@@ -93,20 +94,54 @@
 
     <main role="main">
 
-        <div class="jumbotron">
-            <div class="img-wrap">
-                <img class="img-fit" src="images/ycee.jpg" alt="Banner">
+        <div class="jumbotron slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img-wrap">
+                  <img class="img-fit" src="images/ycee.jpg" alt="Banner">
+              </div>
+              <div class="container jumbotron-inner row flex-column">
+                  <h1 class="col-6 col-sm-12 text-light text-truncate">Juice (feat. Maleek berry)</h1>
+                  <h1 class="col-6 col-sm-12 text-heavy text-truncate">Ycee</h1>
+                  <div class="col-2 col-sm-6">
+                      <a class="btn btn-rounded no-gutters" href="#" role="button">
+                          <div class="col-3"><img class="img-fit" src="images/emblem.png" alt="nairatone emblem"></div>
+                          <div class="col-9">Get Tone</div>
+                      </a>
+                  </div>
+              </div>
             </div>
-            <div class="container jumbotron-inner row flex-column">
-                <h1 class="col-6 col-sm-12 text-light text-truncate">Juice (feat. Maleek berry)</h1>
-                <h1 class="col-6 col-sm-12 text-heavy text-truncate">Ycee</h1>
-                <div class="col-2 col-sm-6">
-                    <a class="btn btn-rounded no-gutters" href="#" role="button">
-                        <div class="col-3"><img class="img-fit" src="images/emblem.png" alt="nairatone emblem"></div>
-                        <div class="col-9">Get Tone</div>
-                    </a>
-                </div>
+            <div class="swiper-slide">
+              <div class="img-wrap">
+                  <img class="img-fit" src="images/ycee.jpg" alt="Banner">
+              </div>
+              <div class="container jumbotron-inner row flex-column">
+                  <h1 class="col-6 col-sm-12 text-light text-truncate">Omo Alhaji</h1>
+                  <h1 class="col-6 col-sm-12 text-heavy text-truncate">Ycee</h1>
+                  <div class="col-2 col-sm-6">
+                      <a class="btn btn-rounded no-gutters" href="#" role="button">
+                          <div class="col-3"><img class="img-fit" src="images/emblem.png" alt="nairatone emblem"></div>
+                          <div class="col-9">Get Tone</div>
+                      </a>
+                  </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <div class="img-wrap">
+                  <img class="img-fit" src="images/ycee.jpg" alt="Banner">
+              </div>
+              <div class="container jumbotron-inner row flex-column">
+                  <h1 class="col-6 col-sm-12 text-light text-truncate">Iskaba</h1>
+                  <h1 class="col-6 col-sm-12 text-heavy text-truncate">Wande Coal</h1>
+                  <div class="col-2 col-sm-6">
+                      <a class="btn btn-rounded no-gutters" href="#" role="button">
+                          <div class="col-3"><img class="img-fit" src="images/emblem.png" alt="nairatone emblem"></div>
+                          <div class="col-9">Get Tone</div>
+                      </a>
+                  </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <section class="container text-center">
@@ -311,6 +346,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.slider', {
+        speed: 500,
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    </script>
 </body>
 
 </html>
