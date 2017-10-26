@@ -70,12 +70,24 @@ section {
   background-color: #EFEFEF !important;
 }
 
+.card.transparent {
+  background-color: transparent !important;
+}
+
 .bg-dark {
     background-color: #000000;
 }
 
 .grey-bg {
   background-color: #F0F0F0 !important;
+}
+
+.bg-login {
+  padding: 5em;
+  margin: 0 auto 5em;
+  background: -webkit-linear-gradient(left, #552F7F 0%, #552F7F 50%, #F3F3F3 50%, #F3F3F3 100%);
+  background: -o-linear-gradient(left, #552F7F 0%, #552F7F 50%, #F3F3F3 50%, #F3F3F3 100%);
+  background: linear-gradient(to right, #552F7F 0%, #552F7F 50%, #F3F3F3 50%, #F3F3F3 100%);
 }
 
 .bg-purple, .btn-purple {
@@ -88,8 +100,8 @@ section {
 }
 
 .jumbotron-inner {
-  margin: auto;
-  padding: 5rem 0;
+  margin: auto !important;
+  padding: 5rem 0 !important;
   color: #FFFFFF;
 }
 
@@ -118,6 +130,8 @@ nav img {
 }
 
 .navbar {
+  position: relative;
+  display: block;
   z-index: 1023;
 }
 
@@ -397,6 +411,10 @@ nav img {
 
 .text-center {
     text-align: center !important;
+}
+
+.text-white {
+  color: #FFFFFF !important;
 }
 
 @media (max-width: 576px) {
