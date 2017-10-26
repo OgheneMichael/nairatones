@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Nairatones</title>
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 300;
+        src: local('Avenir Light'), local('Avenir-Light'), url(fonts/avenir-light.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Avenir Book'), local('Avenir-Book'), url(fonts/avenir-book.woff) format('woff');
+      }
+
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 500;
+        src: local('Avenir Roman'), local('Avenir-Roman'), url(fonts/avenir-roman.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Avenir Medium'), local('Avenir-Medium'), url(fonts/avenir-medium.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Avenir Heavy'), local('Avenir-Heavy'), url(fonts/avenir-heavy.woff) format('woff');
+      }
+
+      @font-face {
+        font-family: 'Avenir';
+        font-style: normal;
+        font-weight: 800;
+        src: local('Avenir Black'), local('Avenir-Black'), url(fonts/avenir-black.woff) format('woff');
+      }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md">
+        <div class="nav-top navbar-dark bg-dark">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-2 col-sm-5">
+                        <img class="img-fit" src="images/logo-sm.png" alt="Nairatones Logo">
+                    </div>
+                    <div class="col-2 col-sm-5">
+                        <img class="img-fit" src="images/upload-tones.png" alt="Nairatones Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bottom navbar-light bg-light">
+            <div class="container">
+                <form>
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-4 col-sm-5">
+                            <input type="search" name="search" class="form-control">
+                        </div>
+                        <div class="col-2 col-sm-6 text-center">
+                            <div class="row no-gutters">
+                              <span class="col-6 text-roman">Sign In</span>
+                              <span class="col-6 text-heavy">Sign Up</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main">
+
+        <div class="jumbotron bg-profile">
+          <div class="container pl-0">
+              <div class="row has-pad pad-sm ptb justify-content-around mb-5">
+                <div class="col-3 col-sm-12">
+                  <div class="profile-img-wrap">
+                    <img src="images/profile.jpg" alt="" class="img-fit img-rounded">
+                  </div>
+                </div>
+                <div class="col-7 mt-5 col-sm-12">
+                  <div class="row">
+                    <div class="col-9 col-sm-12">
+                      <div class="row no-gutters">
+                        <h3 class="col-12 username">Oghene Michael</h3>
+                      </div>
+                      <div class="row no-gutters align-items-center">
+                        <div class="col-1">
+                          <img src="images/flag.svg" alt="Country Flag">
+                        </div>
+                        <div class="col">Country: Nigeria</div>
+                      </div>
+                      <div class="row no-gutters align-items-center mtb-5">
+                        <div class="col-1">
+                          <img src="images/tel.svg" alt="Phone Icon">
+                        </div>
+                        <div class="col">+234 80 8012 876 123</div>
+                      </div>
+                      <div class="row no-gutters align-items-center mtb-5">
+                        <div class="col-1">
+                          <img src="images/mail.svg" alt="Mail Icon">
+                        </div>
+                        <div class="col">zonalmeet@gmail.com</div>
+                      </div>
+                    </div>
+                    <div class="col-3 col-sm-12 order-sm-first">
+                      <a class="btn no-gutters justify-content-center text-medium text-link" href="#" role="button">
+                          <div class="col-3"><img src="images/edit.svg" alt="edit"></div>
+                          <div class="col-5">Edit</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="jumbotron grey-bg mtb-5">
+            <div class="container">
+                <div class="row has-pad ptb justify-content-between">
+                  <div class="col-3 col-md-5 col-sm-12 mb-5">
+                    <div class="btn-group mb-5 row no-gutters" role="group" aria-label="Basic example">
+                      <button type="button" class="col-6 btn-green text-heavy">Latest</button>
+                      <button type="button" class="col-6 btn-white text-heavy">All Uploads</button>
+                    </div>
+                  </div>
+                  <div class="col-3 col-md-4 col-sm-12">
+                    <div class="btn-group row no-gutters" role="group" aria-label="Basic example">
+                      <button type="button" class="col-6 btn-white">Uploads</button>
+                      <button type="button" class="col-6 btn-white text-heavy">234</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="container">
+          <div class="row no-gutters">
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/link-up.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Link Up (feat. Reekado Banks)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ycee</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/ruffcoin.jpg" alt="Ruffcoin" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Ogbugianyi (feat. Phyno & Zoro)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ruffcoin</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/tekno-pana.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Pana</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Tekno</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/link-up.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Link Up (feat. Reekado Banks)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ycee</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/ruffcoin.jpg" alt="Ruffcoin" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Ogbugianyi (feat. Phyno & Zoro)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ruffcoin</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/tekno-pana.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Pana</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Tekno</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/link-up.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Link Up (feat. Reekado Banks)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ycee</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/ruffcoin.jpg" alt="Ruffcoin" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Ogbugianyi (feat. Phyno & Zoro)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ruffcoin</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/tekno-pana.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Pana</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Tekno</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/link-up.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Link Up (feat. Reekado Banks)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ycee</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/ruffcoin.jpg" alt="Ruffcoin" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Ogbugianyi (feat. Phyno & Zoro)</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Ruffcoin</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-md-6 col-sm-12 mb-5">
+              <div class="card grey-bg has-shadow">
+                <div class="row">
+                  <div class="col-5 col-sm-4">
+                    <div class="img-wrap">
+                      <img src="images/tekno-pana.jpg" alt="Ycee Link Up" class="img-fit">
+                    </div>
+                  </div>
+                  <div class="col-7 col-sm-8 pill-inner">
+                    <div class="row flex-column no-gutters">
+                      <h3 class="col-10 text-heavy text-truncate">Pana</h3>
+                      <h4 class="col-10 text-medium text-muted text-truncate">Tekno</h4>
+                      <div class="col-10 text-muted">
+                        <div class="row align-items-center">
+                          <span class="col-2 pr-0">
+                            <img src="images/download.svg" alt="">
+                          </span>
+                          <small class="col text-muted pl-0">12,564,000</small>
+                        </div>
+                      </div>
+                      <div class="col-10 align-self-end">
+                        <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
+                            <div class="col-3"><img class="img-fit" src="images/emblem-green.png" alt="nairatone emblem"></div>
+                            <div class="col-9">Get Tone</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-6 col-sm-10 has-pad">
+              <a class="btn btn-rounded btn-purple" href="#" role="button">
+                  <div class="col">See more</div>
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+    </main>
+    <hr>
+    <footer class="container">
+        <div class="row no-gutters">
+          <div class="col-6 col-sm-12 text-sm-center">
+            <nav>
+              <ul class="footer-menu">
+                <li class="pl-0"><a href="#">Trends</a></li>
+                <li class=""><a href="#">Hot</a></li>
+                <li class=""><a href="#">Latest</a></li>
+                <li class=""><a href="#">About</a></li>
+                <li class=""><a class="not" href="#">Developers</a></li>
+              </ul>
+              <p>Language: <a href="#">English</a></p>
+            </nav>
+          </div>
+          <div class="col-6 col-sm-12 text-right text-sm-center">
+            <p class="mt-1">&copy; 2017 Nairatones, All Rights Reserved</p>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+</body>
+
+</html>
