@@ -135,11 +135,18 @@
                     </div>
                     <div class="card-body z-index has-pad"></div>
                     <div class="card-footer bg-dark text-white z-index">
-                      Player content goes here
+                      <div class="row">
+                        <div class="col" onclick="wavesurfer.playPause()">
+                          <img onclick="plPause()" id="play_pause" class="img-fit" src="images/play.svg" alt="nairatone emblem">
+                        </div>
+                        <div class="col-9">
+                          <div id="waveform"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 col-sm-6">
                   <a class="btn btn-rounded btn-rounded-green no-gutters" href="#" role="button">
                       <div class="col-3"><img src="images/emblem-green.png" alt="nairatone emblem"></div>
                       <div class="col-9">Get Tone</div>
@@ -389,7 +396,37 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.4.0/wavesurfer.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var playPause =  document.getElementById("play_pause");
+
+          function plPause()
+          {
+              if (playPause.getAttribute('src') == "images/play.svg")
+              {
+                  playPause.src = "images/play.svg";
+              }
+              else
+              {
+                  playPause.src = "images/flag.svg";
+              }
+          }
+    </script>
+    <script type="text/javascript">
+      var wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: 'violet',
+        progressColor: 'purple'
+      });
+
+    wavesurfer.load('audio.mp3');
+    </script>
+
+
+
+
+
 </body>
 
 </html>
