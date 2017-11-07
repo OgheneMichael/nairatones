@@ -155,7 +155,6 @@ img {
   width: 84px;
   max-height: 84px;
   max-width: 100%;
-  height: 100%;
 }
 
 .img-rounded {
@@ -186,10 +185,11 @@ nav img {
 [name="search"] {
   border-radius: 50px !important;
   background-color: #EAEAEA !important;
-  background-image: url("../images/search.svg") !important;
+  background-image: url(../images/search.svg) !important;
   background-repeat: no-repeat;
-  background-position: 95% 50%;
+  background-position: 3% 50%;
   height: 100%;
+  padding-left: 2rem !important;
 }
 
 [name="upload"] {
@@ -426,6 +426,10 @@ nav img {
     border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
+.plr-0 {
+  padding: 0.75rem 0.25rem;
+}
+
 
 .no-gutters > [class*="col-"] > .row > [class*="col-"] {
   /*padding-left: 2.5px;
@@ -493,6 +497,18 @@ nav img {
 }
 
 @media (max-width: 576px) {
+    .container {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    .profile-img-wrap.sm {
+        width: 84px;
+        max-height: 84px;
+        max-width: 100%;
+        height: 100% !important;
+    }
+
     .text-sm-left {
         text-align: left !important;
     }
@@ -630,4 +646,24 @@ ul.footer-menu > li > a:not(.not)::after {
 
 .username {
   font-size: 38px
+}
+
+.height-3-- {
+  height: 300px !important;
+}
+
+#waveform wave {
+  height: 28px !important;
+}
+
+.nowrap {
+  flex-wrap: nowrap;
+}
+
+#play_pause {
+  cursor: pointer;
+}
+
+.share span {
+  margin: 0 5px 2px;
 }

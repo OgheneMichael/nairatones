@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-1.4%" y="-1.2%" width="102.9%" height="103.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.26 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="File-Information" transform="translate(-419.000000, -767.000000)" fill="#EF9A0F">
+            <g id="Bitmap" filter="url(#filter-1)" transform="translate(236.000000, 389.000000)">
+                <g id="Group-6" transform="translate(126.000000, 379.000000)">
+                    <polygon id="Shape" points="69.0909091 12.6184 74.0349091 15.6 72.7269091 9.9768 77.0909091 6.1952 71.3381091 5.7016 69.0909091 0.4 66.8437091 5.7016 61.0909091 6.1952 65.4549091 9.9768 64.1469091 15.6"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
