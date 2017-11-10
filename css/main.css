@@ -652,16 +652,22 @@ ul.footer-menu > li > a:not(.not)::after {
   height: 300px !important;
 }
 
-#waveform wave {
+#waveform wave, #tonepreview wave {
   height: 28px !important;
+}
+
+#tonepreview canvas {
+      width: 100% !important;
 }
 
 .nowrap {
   flex-wrap: nowrap;
 }
 
-#play_pause {
+.previewCTRL {
   cursor: pointer;
+  height: 27px;
+  max-width: 27px;
 }
 
 .share span {
