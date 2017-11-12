@@ -198,6 +198,8 @@ nav img {
 
 [name="upload"] ~ label {
   cursor: pointer;
+  max-width: 200px;
+  margin: auto;
 }
 
 .form-control {
@@ -252,8 +254,27 @@ nav img {
     opacity: 1;
 }
 
+.upload-form label {
+    display: block;
+    padding-left: .5em;
+    padding-bottom: .5em;
+    color: #000000 !important;
+
+}
+
+.upload-form [type=text] {
+    border: 1px solid transparent;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.26);
+    border-radius: 8px;
+}
+
+.upload-form .btn {
+    border-radius: 8px;
+}
+
 .btn {
     display: flex;
+    justify-content: center;
     align-items: center;
     font-weight: 800;
     text-align: center !important;
